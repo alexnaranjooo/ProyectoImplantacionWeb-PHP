@@ -48,35 +48,6 @@ ProyectoImplantacionWeb-PHP/
 │       └── ...
 └── README.md
 ```
-
----
-
-### 🖥️ Requisitos
-
-```
-- Servidor local: XAMPP / WAMP / LAMP
-- PHP >= 7.4
-- MySQL >= 5.7
-- Navegador moderno
-```
-
----
-
-### ▶️ Cómo ejecutarlo
-
-```bash
-# 1. Clona el repositorio
-git clone https://github.com/alexnaranjooo/ProyectoImplantacionWeb-PHP.git
-
-# 2. Mueve los archivos a tu servidor local
-# Carpeta htdocs de XAMPP o www de WAMP
-
-# 3. Importa la base de datos si hay archivo .sql
-
-# 4. Accede desde el navegador
-http://localhost/ProyectoImplantacionWeb-PHP
-```
-
 ---
 
 *Desarrollado como proyecto escolar · Implantación Web · PHP + MySQL*

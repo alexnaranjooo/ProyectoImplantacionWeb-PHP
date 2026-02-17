@@ -1,0 +1,14 @@
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    nombre VARCHAR(100),
+    email VARCHAR(100),
+    rol ENUM('admin', 'usuario') DEFAULT 'usuario',
+    activo BOOLEAN DEFAULT 1,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insertar usuario de prueba (contraseña: 'admin123' después del hash)
+INSERT INTO usuarios (username, password_hash, nombre, email, rol) VALUES
+('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Administrador', 'admin@test.com', 'admin');
